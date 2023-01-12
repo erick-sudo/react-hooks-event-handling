@@ -3,7 +3,7 @@ import React from "react";
 function Login() {
   function handleSubmit(event) {
     event.preventDefault();
-    console.log("I submit");
+    alert(`Username = ${event.target.username.value}\nPassword = ${event.target.password.value}`);
   }
 
   return (

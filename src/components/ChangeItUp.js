@@ -2,7 +2,7 @@ import React from "react";
 
 function ChangeItUp() {
   function handleChange(event) {
-    console.log(`${event.target.name}: ${event.target.value}`);
+    alert(`${event.target.name}: ${event.target.value}`);
   }
 
   return (
@@ -14,7 +14,7 @@ function ChangeItUp() {
         placeholder="Enter search term..."
       />
 
-      <select name="filter" onChange={handleChange}>
+      <select name="filter" onInput={handleChange}>
         <option value="all">Select a filter...</option>
         <option value="completed">Completed</option>
         <option value="incomplete">Incomplete</option>
